@@ -42,7 +42,7 @@ const actions = [
 export default function Cards() {
     return (
         <Container fluid className="pb-3">
-            <Row className="g-4">
+            <Row className="g-4 justify-content-center">
                 {actions.slice(0, 5).map((action, index) => (
                     <Col key={index} md={4}>
                         <Card className={"h-100 text-center p-4 border border-2"}

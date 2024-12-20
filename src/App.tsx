@@ -7,7 +7,7 @@ import Tutorial from './components/Tutorial'
 import Press from './components/Press'
 import Header from './subcomponents1/Header'
 import Features from './subcomponents1/Features'
-import FeaturesCards from './subcomponents1/FeaturesCards'
+import Cards from './subcomponents1/Cards'
 import ScreenMirroringTabs from './subcomponents2/ScreenMirroring'
 import BroadcastSteps from './subcomponents2/BroadCast'
 import PlatformDetails from './subcomponents2/PlatformDetails'
@@ -62,7 +62,7 @@ export default function App() {
 
         <section className="cards-section py-md-4">
           <div className="container">
-            <FeaturesCards />
+            <Cards />
           </div>
         </section>
       </div>

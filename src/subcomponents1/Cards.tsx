@@ -44,7 +44,7 @@ export default function Cards() {
         <Container fluid className="pb-3">
             <Row className="g-4 justify-content-center">
                 {actions.slice(0, 5).map((action, index) => (
-                    <Col key={index} md={4}>
+                    <Col key={index} sm={12} md={6} lg={4}>
                         <Card className={"h-100 text-center p-4 border border-2"}
                             data-cursor-text={`${action.data}`}
                         >

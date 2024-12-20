@@ -34,7 +34,7 @@ export default function BroadcastSteps() {
 
             <Row className="g-4 mb-4">
                 {steps.map((step, index) => (
-                    <Col key={index} md={4}>
+                    <Col key={index} sm={12} md={6} lg={4}>
                         <Card className="h-100 border shadow rounded-2 bg-light" data-cursor-text={`Step${step.number}`}>
                             <Card.Body className="text-center p-4">
                                 <img

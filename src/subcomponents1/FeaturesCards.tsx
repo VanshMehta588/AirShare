@@ -1,9 +1,9 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Card1 from '../assets/airshare_cards_1.svg';
-import Card2 from '../assets/airshare_cards_2.svg';
-import Card3 from '../assets/airshare_cards_3.svg';
-import Card4 from '../assets/airshare_cards_4.svg';
-import Card5 from '../assets/airshare_cards_5.svg';
+import Card1 from '../assets/airshare_Cards_1.svg';
+import Card2 from '../assets/airshare_Cards_2.svg';
+import Card3 from '../assets/airshare_Cards_3.svg';
+import Card4 from '../assets/airshare_Cards_4.svg';
+import Card5 from '../assets/airshare_Cards_5.svg';
 
 
 const actions = [
@@ -39,7 +39,7 @@ const actions = [
     }
 ];
 
-export default function Cards() {
+export default function FeaturesCards() {
     return (
         <Container fluid className="pb-3">
             <Row className="g-4">

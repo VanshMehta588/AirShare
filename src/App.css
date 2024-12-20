@@ -34,6 +34,10 @@
   background-color: #0C2045 !important;
 }
 
+.star-border{
+  border-color: #0C2045;
+}
+
 .bg-darkblue:hover {
   opacity: 0.5;
 }

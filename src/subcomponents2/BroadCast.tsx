@@ -27,7 +27,7 @@ export default function BroadcastSteps() {
     ];
 
     return (
-        <Container className="py-5">
+        <Container className="py-4">
             <h2 className="text-center h2 mb-5 font-1 fw-bold">
                 Simple 1-2-3 Steps To Broadcast
             </h2>

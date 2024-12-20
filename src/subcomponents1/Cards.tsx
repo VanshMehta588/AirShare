@@ -1,9 +1,9 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Card1 from '../assets/airshare_cards_1.svg';
-import Card2 from '../assets/airshare_cards_2.svg';
-import Card3 from '../assets/airshare_cards_3.svg';
-import Card4 from '../assets/airshare_cards_4.svg';
-import Card5 from '../assets/airshare_cards_5.svg';
+import Card1 from '../assets/airshare_Cards_1.svg';
+import Card2 from '../assets/airshare_Cards_2.svg';
+import Card3 from '../assets/airshare_Cards_3.svg';
+import Card4 from '../assets/airshare_Cards_4.svg';
+import Card5 from '../assets/airshare_Cards_5.svg';
 
 
 const actions = [
@@ -45,7 +45,7 @@ export default function Cards() {
             <Row className="g-4">
                 {actions.slice(0, 5).map((action, index) => (
                     <Col key={index} md={4}>
-                        <Card className={"h-100 text-center p-4 border-2"}
+                        <Card className={"h-100 text-center p-4 border border-2"}
                             data-cursor-text={`${action.data}`}
                         >
                             <Card.Body>

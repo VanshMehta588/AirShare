@@ -42,7 +42,7 @@ export default function Features() {
   ];
 
   return (
-    <Container className="py-5">
+    <Container className="py-4">
       <h2 className="text-center h1 mb-5 fw-bold font-1">
         Unleash The Full Power Of Your Screen Sharing
       </h2>
@@ -78,7 +78,7 @@ export default function Features() {
           {/* Image Column */}
           <Col 
             lg={6} 
-            className={feature.isReversed ? 'order-lg-1' : ''}
+            className={feature.isReversed ? 'order-lg-1 text-center' : ' text-center'}
           >
             <img
               src={feature.image}

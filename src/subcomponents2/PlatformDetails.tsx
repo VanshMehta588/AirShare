@@ -23,7 +23,7 @@ export default function PlatformDetails() {
   const platformDetails: Record<PlatformId, PlatformDetails> = {
     ios: {
       requirements: 'iOS 11 or higher',
-      rating: 4.5,
+      rating: 4,  // iOS gets 4.5 stars
       whatsnew: [
         'New iOS features as a receiving screen.',
         'Other bug fixes and improvements have been made.'
@@ -31,12 +31,12 @@ export default function PlatformDetails() {
     },
     web: {
       requirements: 'Modern browsers',
-      rating: 4.5,
+      rating: 5,  // Web gets 3.5 stars
       whatsnew: ['Enhanced web compatibility', 'Performance improvements']
     },
     android: {
       requirements: 'Android 6.0+',
-      rating: 4.5,
+      rating: 3,  // Android gets 5 stars
       whatsnew: ['New Android features', 'Stability improvements']
     }
   };
@@ -98,7 +98,6 @@ export default function PlatformDetails() {
                 activePlatform === platform.id ? 'bg-darkblue text-white' : ''
               }`}
               data-cursor-text={`${platform.name}`}
-
             >
               {platform.name}
             </Nav.Link>

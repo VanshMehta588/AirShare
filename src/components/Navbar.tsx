@@ -5,7 +5,7 @@ import logo from '../assets/airshare_logo.svg';
 export default function Navigation() {
     return (
         <Navbar bg="transparent" expand="lg" className="py-3 ">
-            <Container fluid className='gap-5'>
+            <Container fluid className='gap-md-5'>
                 <Navbar.Brand href="#home" className="d-flex align-items-center">
                     <img
                         src={`${logo}`}

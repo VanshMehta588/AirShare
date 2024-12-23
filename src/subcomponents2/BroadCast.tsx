@@ -32,7 +32,7 @@ export default function BroadcastSteps() {
                 Simple 1-2-3 Steps To Broadcast
             </h2>
 
-            <Row className="g-4 mb-4">
+            <Row className="g-4 mb-4 justify-content-center">
                 {steps.map((step, index) => (
                     <Col key={index} sm={12} md={6} lg={4}>
                         <Card className="h-100 border shadow rounded-2 bg-light" data-cursor-text={`Step${step.number}`}>

@@ -51,11 +51,11 @@ export default function Navigation({ refs }: NavigationProps) {
     <Navbar
       bg={scrolled ? "white" : "transparent"}
       expand="lg"
-      className={`py-3 ${scrolled ? 'scrolledshadow' : ''}`}
+      className={`py-2 ${scrolled ? 'scrolledshadow' : ''}`}
       expanded={isNavOpen} // Control navbar expansion
     >
       <Container fluid className="gap-2 gap-lg-5">
-        <Navbar.Brand href="#home" className="d-flex align-items-center"  onClick={() => window.location.reload()}>
+        <Navbar.Brand href="#home" className="d-flex align-items-center" onClick={() => window.location.reload()}>
           <img
             src={`${logo}`}
             alt="Drop Files Logo"
@@ -63,21 +63,25 @@ export default function Navigation({ refs }: NavigationProps) {
             data-cursor-text="Drop Files"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setIsNavOpen(!isNavOpen)} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav border border-0" onClick={() => setIsNavOpen(!isNavOpen)} />
         <Navbar.Collapse id="basic-navbar-nav font-1">
-          <Nav className="mx-auto gap-3 text-end">
+          <Nav className="mx-auto gap-2 text-end">
             <Nav.Link
               onClick={() => { handleScroll(refs.features); handleNavLinkClick(); }}
+              className='pe-2 pe-md-0'
             >
               Features
             </Nav.Link>
             <Nav.Link
               onClick={() => { handleScroll(refs.guide); handleNavLinkClick(); }}
+              className='pe-2 pe-md-0'
+
             >
               Guide
             </Nav.Link>
             <Nav.Link
               onClick={() => { handleScroll(refs.topic); handleNavLinkClick(); }}
+              className='pe-2 pe-md-0'
             >
               Topic
             </Nav.Link>
@@ -85,12 +89,13 @@ export default function Navigation({ refs }: NavigationProps) {
               href="#reviews"
               data-cursor-text="Reviews"
               onClick={handleNavLinkClick}
+              className='pe-2 pe-md-0'
             >
               Reviews
             </Nav.Link>
             <Nav.Link
               href="#airdroid"
-              className="d-inline d-lg-none"
+              className="d-inline d-lg-none pe-2 pe-md-0"
               data-cursor-text="Web Cast"
               onClick={handleNavLinkClick}
             >

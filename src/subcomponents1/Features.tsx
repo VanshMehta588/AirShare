@@ -42,7 +42,7 @@ export default function Features() {
   ];
 
   return (
-    <Container className="py-4">
+    <Container className="py-5">
       <h2 className="text-center h1 mb-5 fw-bold font-1">
         Unleash The Full Power Of Your Screen Sharing
       </h2>

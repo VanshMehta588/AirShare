@@ -65,7 +65,7 @@ export default function FAQSection() {
     const dataToDisplay = activeTab === 'faqs' ? faqs : hotTopics;
 
     return (
-        <Container className="py-5">
+        <Container className="py-4">
             <h2 className="text-center h2 mb-4 font-1 fw-bold">
             FAQs & Hot Topics
             </h2>

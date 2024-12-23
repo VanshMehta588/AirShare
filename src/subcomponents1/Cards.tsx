@@ -1,9 +1,9 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Card1 from '../assets/airshare_cards_1.svg';
-import Card2 from '../assets/airshare_cards_2.svg';
-import Card3 from '../assets/airshare_cards_3.svg';
-import Card4 from '../assets/airshare_cards_4.svg';
-import Card5 from '../assets/airshare_cards_5.svg';
+import Card1 from '../assets/airshare_Cards_1.svg';
+import Card2 from '../assets/airshare_Cards_2.svg';
+import Card3 from '../assets/airshare_Cards_3.svg';
+import Card4 from '../assets/airshare_Cards_4.svg';
+import Card5 from '../assets/airshare_Cards_5.svg';
 
 
 const actions = [
@@ -45,7 +45,7 @@ export default function Cards() {
             <Row className="g-4 justify-content-center">
                 {actions.slice(0, 5).map((action, index) => (
                     <Col key={index} sm={12} md={6} lg={4}>
-                        <Card className={"h-100 text-center p-4 border border-2"}
+                        <Card className={"h-100 text-center p-4 border border-2 rounded-3"}
                             data-cursor-text={`${action.data}`}
                         >
                             <Card.Body>
@@ -65,13 +65,13 @@ export default function Cards() {
             </Row>
 
             <div className="text-center mt-5">
-                <Button variant="" className="me-3 bg-darkblue text-white px-5 py-3" data-cursor-text="Download">
+                <Button variant="" className="me-md-3 bg-darkblue text-white card-button" data-cursor-text="Download">
                     Download Now
                 </Button>
                 <div className=' d-block d-md-none'>
                     <br />
                 </div>
-                <Button variant="light" className=' px-5 py-3 border border-2' data-cursor-text="Learn More">
+                <Button variant="light" className='card-button border border-2' data-cursor-text="Learn More">
                     Buy Now
                 </Button>
             </div>

@@ -1,5 +1,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import logo from '../assets/airshare_logo.svg';
+import googleplay from '../assets/airshare_logo_googleplay.svg';
+import appstore from '../assets/airshare_logo_appstore.svg';
 
 
 export default function Hero() {
@@ -23,22 +25,23 @@ export default function Hero() {
             You Can Transfer Files, Share Apps, And Mirror Your Screen Effortlessly, Anytime,
             Anywhere.
           </p>
-          <div className="d-flex justify-content-center gap-5">
-            <Button 
-              variant="" 
-              className="d-flex align-items-center gap-0 gap-md-3 bg-darkblue text-white px-2 px-lg-5"
+          <div className="d-flex justify-content-center gap-0 gap-md-5">
+            <Button
+              variant=""
+              className="d-flex align-items-center hero-button"
               data-cursor-text="Apple"
             >
-             <h1><i className="bi bi-apple"></i></h1>
-              Download on the<br />App Store
+              <img src={`${appstore}`} alt="" className='img-fluid'/>
             </Button>
-            <Button 
-              variant="light" 
-              className="d-flex align-items-center gap-0 gap-md-3 px-2 px-lg-5"
+            <Button
+              variant=""
+              className="d-flex align-items-center hero-button"
+              // className="d-flex align-items-center gap-0 gap-md-3 px-2 px-lg-5"
               data-cursor-text="Android"
             >
-              <h1><i className="bi bi-google-play"></i></h1>
-              GET IT ON<br />Google Play
+              <img src={`${googleplay}`} alt="" className='img-fluid'/>
+              {/* <h1><i className="bi bi-google-play"></i></h1>
+              <h6>GET IT ON<br />Google Play</h6> */}
             </Button>
           </div>
         </Col>

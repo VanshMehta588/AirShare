@@ -55,7 +55,7 @@ export default function Navigation({ refs }: NavigationProps) {
       expanded={isNavOpen} // Control navbar expansion
     >
       <Container fluid className="gap-2 gap-lg-5">
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand href="#home" className="d-flex align-items-center"  onClick={() => window.location.reload()}>
           <img
             src={`${logo}`}
             alt="Drop Files Logo"

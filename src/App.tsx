@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -13,8 +14,7 @@ import BroadcastSteps from './subcomponents2/BroadCast';
 import PlatformDetails from './subcomponents2/PlatformDetails';
 import FAQSection from './subcomponents2/FAQSection';
 import Footer from './subcomponents2/Footer';
-import { useRef } from 'react';
-
+import ScrollToTop from './components/ScrollToTop'
 
 export default function App() {
   const featuresRef = useRef(null);
@@ -100,6 +100,8 @@ export default function App() {
           <Footer />
         </section>
       </div>
+      <ScrollToTop />
+
     </div>
   );
 }

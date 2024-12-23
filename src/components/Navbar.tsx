@@ -65,7 +65,7 @@ export default function Navigation({ refs }: NavigationProps) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav border border-0" onClick={() => setIsNavOpen(!isNavOpen)} />
         <Navbar.Collapse id="basic-navbar-nav font-1">
-          <Nav className="mx-auto gap-3 text-end">
+          <Nav className="mx-auto gap-4 text-end">
             <Nav.Link
               onClick={() => { handleScroll(refs.features); handleNavLinkClick(); }}
               className='pe-2 pe-md-0'
